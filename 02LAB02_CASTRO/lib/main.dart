@@ -155,11 +155,133 @@ class _HomePageState extends State<HomePage>{
 
   }
 
+ else if (selectedPage == 'About') {
+
+    return Column(
+
+      mainAxisAlignment: MainAxisAlignment.center,
+
+      children: [
+
+        ClipOval(
+
+          child: Image.asset(
+
+            'lib/assets/images/porti.jpg',
+
+            width: 120,
+
+            height: 120,
+
+            fit: BoxFit.cover,
+
+          ),
+
+        ),
+
+        SizedBox(height: 16),
+
+        Text(
+
+          'Computer Science Student at STI College Calooocan.',
+
+          style: GoogleFonts.poppins(
+
+            fontSize: 24,
+
+            fontWeight: FontWeight.bold,
+
+          ),
+
+        ),
+
+        SizedBox(height: 8),
+
+        Text(
+
+          'Flutter Developer',
+
+          style: GoogleFonts.roboto(
+
+            fontSize: 16,
+
+            color: Colors.grey[600],
+
+          ),
+
+        ),
+
+      ],
+
+    );
+
+  }
+
+ else if (selectedPage == 'Skills') {
+
+    return Column(
+
+      mainAxisAlignment: MainAxisAlignment.center,
+
+      children: [
+
+        ClipOval(
+
+          child: Image.asset(
+
+            'lib/assets/images/porti.jpg',
+
+            width: 120,
+
+            height: 120,
+
+            fit: BoxFit.cover,
+
+          ),
+
+        ),
+
+        SizedBox(height: 16),
+
+        Text(
+
+          'Problem solving, critical thinking,Digital literacy',
+
+          style: GoogleFonts.poppins(
+
+            fontSize: 24,
+
+            fontWeight: FontWeight.bold,
+
+          ),
+
+        ),
+
+        SizedBox(height: 8),
+
+        Text(
+
+          'Flutter Developer',
+
+          style: GoogleFonts.roboto(
+
+            fontSize: 16,
+
+            color: Colors.grey[600],
+
+          ),
+
+        ),
+
+      ],
+
+    );
+
+  }
+
   return Text('Coming soon: $selectedPage');
 
 }
-
-
 
   @override
 
@@ -412,6 +534,3 @@ void dispose() {
 }
 
 }
-
-
-
